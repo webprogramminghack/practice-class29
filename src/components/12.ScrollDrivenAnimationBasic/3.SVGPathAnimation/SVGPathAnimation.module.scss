@@ -1,0 +1,10 @@
+.progressCircle {
+  width: rem-calc(56);
+  height: rem-calc(56);
+  background-color: #fff;
+  position: fixed;
+  top: rem-calc(10);
+  right: rem-calc(10);
+  border-radius: 50%;
+  z-index: -1;
+}

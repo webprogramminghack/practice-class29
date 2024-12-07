@@ -1,0 +1,67 @@
+.controls {
+  display: flex;
+  gap: rem-calc(8);
+  $height: rem-calc(236);
+  width: 130px;
+  height: $height;
+  border-radius: 10px;
+  background-color: #fff;
+  $padding: rem-calc(8);
+  padding: $padding;
+
+  .actions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: rem-calc(8);
+    height: 100%;
+
+    .button {
+      flex: 1;
+      background-color: #40f;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.plusButton {
+        border-radius: 5px 5px 0 0;
+      }
+
+      &.minusButton {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  }
+
+  .segments {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    $totalSegments: 8;
+    $gap: rem-calc(4);
+    $totalGap: ($totalSegments - 1) * $gap;
+    gap: $gap;
+
+    .segment {
+      height: math.div($height - $totalGap - $padding * 2, $totalSegments);
+      border-radius: rem-calc(4);
+
+      &.low {
+        background-color: #32cd32;
+      }
+
+      &.medium {
+        background-color: #ffa500;
+      }
+
+      &.high {
+        background-color: #ff4500;
+      }
+    }
+  }
+}

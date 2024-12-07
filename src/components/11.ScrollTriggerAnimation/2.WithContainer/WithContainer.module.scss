@@ -1,0 +1,27 @@
+.container {
+  width: rem-calc(600);
+  height: rem-calc(300);
+  font-size: rem-calc(24);
+  color: #fff;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+
+  .placeholder {
+    height: rem-calc(2000);
+    width: 100%;
+    background-color: red;
+    flex-shrink: 0;
+  }
+}
+
+.motionBox {
+  width: rem-calc(160);
+  height: rem-calc(160);
+  border-radius: rem-calc(24);
+  background-color: #fff;
+  flex-shrink: 0;
+}

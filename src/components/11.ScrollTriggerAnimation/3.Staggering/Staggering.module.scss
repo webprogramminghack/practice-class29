@@ -1,0 +1,29 @@
+.container {
+  padding: rem-calc(32);
+  color: #fff;
+}
+
+.centerText {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  font-size: rem-calc(20);
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem-calc(8);
+  justify-content: center;
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  border-radius: rem-calc(16);
+  background-color: #fff;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: transform 0.3s ease, opacity 0.3 ease;
+}

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 150vh;
+  align-items: center;
+  min-width: 150vw;
+}
+
+.info {
+  position: fixed;
+  top: 0;
+}
+
+.box {
+  width: rem-calc(100);
+  height: rem-calc(100);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
